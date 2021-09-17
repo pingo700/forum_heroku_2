@@ -1,0 +1,120 @@
+body{
+    background-color:white
+}
+
+body header img{
+    position: relative;
+    width: 219px;
+    height: 221.6px;
+    left: 140px;
+    top: 96px;
+}
+
+body section h3{
+    position: absolute;
+    width: 291px;
+    height: 28px;
+    left: 1111px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+body button{
+    position: relative;
+    width: 380px;
+    height: 42px;
+    left: 111px;
+    top: 170px;   
+    background: #1682FD;
+    border-radius: 5px;
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+    margin: 20px 0px;   
+}
+
+body section text{
+    position: relative;
+    width: 380px;
+    height: 60px;
+    left: 111px;
+    top: 140px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+body section img{
+    position: absolute;
+    width: 1075px;
+    height: 1000px;
+    left: 525px;
+    top: 0px;
+}
+
+body section input{
+    position: relative;
+    width: 380px;
+    height: 42px;
+    left: 111px;
+    top: 150px; 
+    background: #FFFFFF;  
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 3px 0px;
+}
+
+body section input::placeholder{
+    position: static;
+    top: 0px;
+}
+
+body footer button{
+    position: relative;
+    width: 380px;
+    height: 42px;
+    left: 111px;
+    top: 170px;   
+    background: #1682FD;
+    border-radius: 5px;
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+    margin: 20px 0px;   
+}
+
+body section span{
+    position: relative;
+    width: 118px;
+    height: 31px;
+    left: 111px;
+    top: 180px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #1682FD;
+}
