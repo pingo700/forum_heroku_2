@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Redefinir Senha</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{ asset('css/redefinir.css') }}" rel="stylesheet">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/initial.css') }}">
+
+    @livewireStyles
+
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
-<body>
-    <div>
-      <img src="{{ asset('imagens/image9.jpg') }}">
+
+<body class="font-sans antialiased">
+    <x-jet-banner />
+
+    <div class="min-h-screen bg-gray-100">
+        @livewire('navigation-menu')
+
+        <!-- Page Heading -->
+        @if (isset($header))
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                {{ $header }}
+            </div>
+        </header>
+        @endif
+
+        <!-- Page Content -->
+        <main>
+            {{ $slot }}
+        </main>
     </div>
-    <section>
-        <h3>Perdeus sua senha ?</h3><br>
-        <text>Vamos lhe enviar um email de redefinição !!!</text>
-    </section>
-    <div>
-    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
 
-                        <div class="form-group row">
-                            <label for="email" placeholder="Email"class="col-md-4 col-form-label text-md-right"></label>
+    @stack('modals')
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" placeholder ="E-mail" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Enviar') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-    </div>
+    @livewireScripts
 </body>
+
 </html>

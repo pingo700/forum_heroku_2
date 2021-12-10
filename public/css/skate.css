@@ -1,0 +1,88 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    position: absolute;
+    width: 201px;
+    height: 657px;
+    left: 0px;
+    top: 0px; 
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+   }
+   
+  
+
+   
+   section div{
+       position: absolute;
+       width: 1360px;
+       height: 38px;
+       left: 0px;
+       top: 0px;
+       background-color: #1682FD;
+       mix-blend-mode: darken;
+       border: 1px solid #000000;
+       box-sizing: border-box;
+   }
+   
+   section img{
+    position: absolute;
+    width: 383px;
+    height: 280px;
+    left: 490px;
+    top: 95px;
+   }
+
+   .ca{
+    position: absolute;
+ 
+   
+    left: 145px;
+    top:100px;
+    
+    /* Border */
+    
+    border: 2px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 5px;
+   }
+   
+   footer div{
+       position: absolute;
+       width: 1360px;
+       height: 29px;
+       left: 0px;
+       top: 628px;
+       background: #1682FD;
+       mix-blend-mode: darken;
+       border: 1px solid #000000;
+       box-sizing: border-box;
+   }
+   form button{
+    position: absolute;   
+    left: 320px;
+    top:100px;
+   }
+   form textarea{
+       background-color: #ada3a3;
+       height: 90px;
+       width: 712px;
+       top: 100px;
+   }
+   section form{
+    position: absolute;
+    left: 370px;
+    top: 450px;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    width: 720px;
+    height: 160px;
+}

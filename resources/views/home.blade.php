@@ -15,11 +15,8 @@
     </header>
     <section>
         <div>
-            <form>
-             <input type="text" class="blue" id="exampleFormControlInput1" placeholder="Digite aqui...">
-            </form>
         </div>
-         <form>
+         <form  method="POST" action="{{url('assunto')}}">
            <label for="exampleFormControlInput1">Tópico:</label>
            <input type="" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui..."><br>
             <label for="exampleFormControlTextarea1">Texto:</label>
@@ -28,9 +25,15 @@
                <a href="" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Publicar</a>         
            </button>
           </form>
-          <img  class="xadrez" href="" src="{{ asset('imagens/xadrez.jpg') }}"><br>
-          <img  class="judo" href="" src="{{ asset('imagens/judo.jpg') }}"><br>
-          <img  class="skate"href="" src="{{ asset('imagens/skate.jpg') }}"><br>
+          <a href="{{ url('/xadrez')}}" >
+              <img  class="xadrez" src="{{ asset('imagens/xadrez.jpg') }}"><br>
+          </a>
+          <a href="{{ url('/judo')}}">
+             <img  class="judo"  src="{{ asset('imagens/judo.jpg') }}"><br>
+          </a>
+          <a href="{{ url('/skate')}}">
+             <img  class="skate" src="{{ asset('imagens/skate.jpg') }}"><br>
+          </a>  
     </section>
     <footer>
          <div>

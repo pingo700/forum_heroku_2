@@ -33,19 +33,19 @@ header text{
 .xadrez{
     position: absolute;
     left: 800px;
-    top: 500px;
+    top: 600px;
 }
 
 .judo{
     position: absolute;
     left: 600px;
-    top: 500px;
+    top: 600px;
 }
 
 .skate{
     position: absolute;
     left: 405px;
-    top: 490px;
+    top: 600px;
 }
 
 section form{
@@ -103,12 +103,12 @@ section img{
 }
 
 header{
-    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.05000000074505806);
+  
 	background-color:rgba(255, 255, 255, 1);
 	width:270px;
 	height:273px;
 	left:1156px;
-	top:71px;
+	top:300px;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	border-bottom-left-radius:5px;
@@ -147,7 +147,7 @@ div input{
 
 section div{
     position: absolute;
-    width: 1360px;
+    width: 1440px;
     height: 38px;
     left: 0px;
     top: 0px;
@@ -165,12 +165,12 @@ div form {
     top: 5px;
 }
 
-footer div{
+footer{
     position: absolute;
-    width: 1360px;
+    width: 1440px;
     height: 29px;
     left: 0px;
-    top: 628px;
+    top: 758px;
     background: #1682FD;
     mix-blend-mode: darken;
     border: 1px solid #000000;
